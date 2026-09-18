@@ -5,12 +5,12 @@ name: Code
 on:
   push:
 #Steps in the workflow
-  jobs:
-     code-checkout:
-        runs-on: ubuntu-latest
+jobs:
+  code-checkout:
+       runs-on: ubuntu-latest
        steps: 
          - name: Clone the Code
            uses: actions/checkout@v7
 
          - name: Print the message
-        run: echo "Code Cloned"
+           run: echo "Code Cloned"
